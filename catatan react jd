@@ -1,0 +1,104 @@
+{/* <p className="text-sm mt-5 text-center">
+            {type === "login" ? //conditional rendering ternary dan ini hanya bisa digunakan jika cuman ada 2 seperti login dan register, jika lebih dari dua tidak bisa menggunakan seperti ini
+            "Don't have an account? " 
+            : "Already have an account?"}
+            
+            {type === "login" && ( //conditional rendering and, dan kalo menggunakan and ini kita bisa render satu satu
+            <Link to="/register" className="font-bold text-blue-600">
+            Sign Up
+            </Link>
+            )}
+
+            {type === "register" && ( //conditional rendering and
+            <Link to="/login" className="font-bold text-blue-600">
+            Login
+            </Link>
+            )}
+
+        </p> */}
+
+
+
+// ini di products
+
+{products.map((product) => (
+        <!-- <CardProduct key={product.id}>
+        <CardProduct.Header image={product.image}/>
+        <CardProduct.Body name={product.name}>
+          {product.description}
+        </CardProduct.Body>
+        <CardProduct.Footer price={product.price}/>
+      </CardProduct> -->
+))}
+
+<!-- 
+<ul>
+            {cart.map((item) => (
+              <li key={item}>{item.id}</li>
+            ))}
+          </ul> -->
+
+
+<!-- setCart ([
+      ...cart,
+      {
+      id,
+      qty: 1,
+    },
+    ]) -->
+
+<!-- 
+    componentDidMount() {
+      this.setState({count: 1});
+      console.log("componenDidMount");
+    }
+
+    componentDidUpdate (prevProps, prevState) {
+      console.log("componentDidUpdate");
+      if (this.state.count === 10) {
+        this.setState({ count: 0 });
+      }
+    } -->
+
+
+    <!-- {
+      id: 1,
+      qty: 1,
+    }, -->
+
+// ini nanti bisa dihapus hanya untuk dicoba saja
+      <!-- <div className="mt-5 flex justify-center mb-5">
+        <Counter></Counter>
+      </div> -->
+
+
+<!-- const products = [
+  {
+    id: 1,
+    name: "New Shoes",
+    price: 1000000,
+    image: "/images/shoes1.jpg",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+          eaque quisquam quia necessitatibus fugit placeat dolorem cupiditate
+          totam deserunt officia nobis blanditiis fugiat. Quidem possimus magnam
+          perferendis, minima excepturi similique!`,
+  },
+  {
+    id: 2,
+    name: "Old Shoes",
+    price: 500000,
+    image: "/images/shoes1.jpg",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.`,
+  },
+  {
+    id: 3,
+    name: "Collection Shoes",
+    price: 2000000,
+    image: "/images/shoes1.jpg",
+    description: `Shoes Collection from brand Puma.`,
+  },
+]; -->
+
+
+// console.log(event.target.email.value);
+// console.log(event.target.password.value);
